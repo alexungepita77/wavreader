@@ -10,7 +10,7 @@ namespace ConsoleApplication1
         public static void Main(string[] args)
         {
             BinaryReader br = new BinaryReader(File.Open("piano2.wav",FileMode.Open));
-            BinaryWriter bw= new BinaryWriter(File.Create("output.wav"));
+            BinaryWriter bw= new BinaryWriter(File.Create("test.wav"));
             MuteRightSpeaker(br,bw);
             br.Close();
             bw.Close();
